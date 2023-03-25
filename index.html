@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Name of the app -->
+        <title>HK Walking Tracks Explorer</title>
+
+        <!-- Link to main style sheet -->
+        <link rel="stylesheet" href="style.css"> 
+    <body>
+        <script src="app.js"></script>
+
+        <h1>HK Walking Tracks Explorer</h1>
+
+        <p>Choose a district to show all tracks in the same district:</p>
+            
+        <select id="District_en" onchange="retrieveTracks()">
+            <option class = "district" value="Southern">Southern</option>
+            <option class = "district" value="Central and Western">Central and Western</option>
+            <option class = "district" value="Wan Chai">Wan Chai</option>
+            <option class = "district" value="Eastern">Eastern</option>
+            <option class = "district" value="Sham Shui Po">Sham Shui Po</option>
+            <option class = "district" value="Yau Tsim Mong">Yau Tsim Mong</option>
+            <option class = "district" value="Wong Tai Sin">Wong Tai Sin</option>
+            <option class = "district" value="Kwun Tong">Kwun Tong</option>
+            <option class = "district" value="Kowloon City">Kowloon City</option>
+            <option class = "district" value="Tai Po">Tai Po</option>
+            <option class = "district" value="Sai Kung">Sai Kung</option>
+            <option class = "district" value="Sha Tin Distict">Sha Tin Distict</option>
+            <option class = "district" value="Tuen Mun">Tuen Mun</option>
+            <option class = "district" value="Yuen Long">Yuen Long</option>
+            <option class = "district" value="North">North</option>
+            <option class = "district" value="Tsuen Wan">Tsuen Wan</option>
+            <option class = "district" value="Kwai Tsing">Kwai Tsing</option>
+            <option class = "district" value="Islands">Islands</option>
+            <option class = "district" value="All">All</option>
+        </select>
+        <br><br>
+        
+        
+        <table>
+            
+            <thead>
+                <tr>
+                    <th>Track Name(English)</th>
+                    <th>Track Name(Traditional Chinese)</th>
+                    <th>Track Name(Simplified Chinese)</th>
+                    <th>Locational District(English) </th>
+                    <th>Location District(Traditional Chinese) </th>
+                    <th>Location District(Simplified Chinese) </th>
+                    <th>Route details(English)</th>
+                    <th>Route details(Traditional Chinese)</th>
+                    <th>Route details(Simplified Chinese)</th>
+                    <th>Traffic(English)</th>
+                    <th>Traffic(Traditional Chinese)</th>
+                    <th>Traffic(Simplified Chinese)</th>
+                    <th>Map URL(English)</th>
+                    <th>Map URL(Traditional Chinese)</th>
+                    <th>Map URL(Simplified Chinese)</th>
+                    <th>Latitude</th>
+                    <th>Longitude</th>
+                        
+                </tr>
+            </thead>
+            <tbody id="tcontent">
+            </tbody>
+
+        </table>
+        
+    </body>
+</html>
