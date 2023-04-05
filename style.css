@@ -1,0 +1,61 @@
+@media screen and (max-width: 2560px) {
+    body {
+        background-color: lightgreen;
+       }
+
+    p {
+        font-family: 'Franklin Gothic Medium';
+        font-size: medium;
+        font-style: italic,
+        lightblue;
+    }
+    
+    table caption {
+        font-size: 2em;
+        font-weight: bold;
+        font-style: blue;
+    }
+
+    /* Hide table header. */
+    table thead {
+        display:none
+    }
+
+    /* Force table to not be like tables. */
+    table tr {
+        display: block;
+        margin-bottom: 1em;
+        border: white;
+    }
+
+    /* Behave like a "row" */
+    table td {
+        display: block;
+        text-align: right;
+        border-bottom: 0px;
+        font-style: yellow;
+    }
+
+    /* Behave like a table header */
+    table td::before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-style: orange;
+    }
+
+    table td:last-child {
+        border-bottom: 0;
+        border: 1px solid #000000;
+    }
+
+    tr:nth-child(even) {
+        background-color: lightblue;
+    }
+    
+    
+    
+    
+    
+}
